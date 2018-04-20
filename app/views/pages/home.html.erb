@@ -1,14 +1,17 @@
 <div id="banner">
   <div class="banner-wrap centered">
     <div class="row" align="center">
-      <div class="col-sm-12">
+      <div class="col-xs-12">
         <h4>ANUNCIE PARA MAIS DE 4 MILHÕES DE PESSOAS</h4>
       </div>
     </div>
     <div class="row">
-      <% if current_page?(root_path) %>
-        <%= render 'shared/search-form' %>
-      <% end %>
+      <div class="col-xs-10">
+        <% if current_page?(root_path) %>
+          <%= render 'shared/search-form' %>
+          <%= render 'shared/search-form-mobile' %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
